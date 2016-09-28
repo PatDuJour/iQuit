@@ -1,0 +1,26 @@
+{
+  "name": "angular_underscore",
+  "version": "1.0.0",
+  "description": "A underscore template for angular projects with npm, webpack and dev-server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "template",
+    "boilerplate",
+    "underscore",
+    "npm",
+    "webpack"
+  ],
+  "author": "Patrick Zhang",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
