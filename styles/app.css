@@ -369,6 +369,9 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+html {
+  overflow: hidden; }
+
 a {
   text-decoration: none; }
   a:visited {
