@@ -1,2 +1,2 @@
 var angular  = require('angular');
-angular.module('iQuit', []);
+angular.module('iQuit', [require('angular-animate')]);
