@@ -379,6 +379,9 @@ a {
   a:visited {
     color: black; }
 
+textarea {
+  resize: none; }
+
 img {
   width: 100%; }
 
