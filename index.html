@@ -8,7 +8,7 @@
   <body>
     <div ng-app="iQuit" class="container">
       <div class="container__inner left">
-        <div class="welcome">
+        <div ng-hide="editing" class="welcome fade">
           <img src="img/resign.png" alt="Resignation Letter" />
           <h3 class="header">generator</h3>
           <p class="intro">
@@ -16,20 +16,18 @@
             <a href="http://www.forbes.com/sites/susanadams/2014/06/20/most-americans-are-unhappy-at-work/#1ab90f0d5862">52.3% of Americans</a> feel the same.
           </br>It's okay to tell your boss, "I Quit."
           </p>
-          <a href="" class="quit">quit now</a>
+          <a ng-click="editing = true" href="" class="quit">quit now</a>
         </div>
       </div>
-
       <div class="container__inner right">
         <div class="typewriter">
           <img src="img/typewriter.jpeg" alt="typewriter" />
         </div>
         <div class="resign-letter">
-          <p>I QUIT</p>
+          <p>I QUIT.</p>
         </div>
       </div>
     </div>
-    <script src="js/app.min.js">
-    </script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

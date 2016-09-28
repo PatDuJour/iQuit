@@ -1,0 +1,6 @@
+.ng-hide {
+  transition: all linear .5s;
+  &.fade {
+    opacity: 0;
+  }
+}
