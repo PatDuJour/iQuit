@@ -486,6 +486,9 @@ input, label {
     background-color: #ccc;
     border: 1px solid black;
     color: #27418F;
-    font-weight: bold; }
+    font-weight: bold;
+    cursor: pointer; }
+    .form ng-form > div button.btn.btn-primary.ng-scope:active {
+      background-color: red; }
 
 /*# sourceMappingURL=app.css.map */

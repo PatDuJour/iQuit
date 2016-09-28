@@ -28,6 +28,10 @@ input, label {
         border: 1px solid black;
         color: $royal-blue;
         font-weight: bold;
+        cursor: pointer;
+        &:active {
+          background-color: red;
+        }
       }
     }
   }

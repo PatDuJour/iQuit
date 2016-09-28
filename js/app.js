@@ -8,14 +8,15 @@
 
   function mainCtrl() {
     var vm = this;
+    vm.obSubmit = onSubmit;
     // The model object that we reference
     // on the  element in index.html
-    vm.rental = {};
+    vm.model = {};
 
     // An array of our form fields with configuration
     // and options set. We make reference to this in
     // the 'fields' attribute on the  element
-    vm.rentalFields = [
+    vm.fields = [
         {
             key: 'name',
             type: 'input',
@@ -40,7 +41,7 @@
             key: 'company',
             type: 'input',
             templateOptions: {
-                type: 'email',
+                type: 'text',
                 label: 'Company',
                 placeholder: 'THE COMPANY',
 
@@ -67,5 +68,10 @@
             }
         },
     ];
+
+    function onSubmit() {
+      console.log('called');
+      alert(JSON.stringify(vm.model), null, 2);
+    }
   }
 })();
