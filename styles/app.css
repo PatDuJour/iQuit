@@ -380,10 +380,14 @@ a {
 img {
   width: 100%; }
 
-.ng-hide {
+.ng-hide.fade {
+  opacity: 0; }
+.ng-hide-remove.fade {
   transition: all linear .5s; }
-  .ng-hide.fade {
-    opacity: 0; }
+  .ng-hide-remove.fade.delay {
+    transition-delay: .4s; }
+.ng-hide-add.fade {
+  transition: all linear .5s; }
 
 .container {
   width: 100%;
@@ -435,5 +439,23 @@ img {
     font-family: monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #77787A;
     letter-spacing: 2px; }
+
+.top {
+  position: absolute;
+  left: 50%; }
+  .top .title {
+    position: relative;
+    left: -25%; }
+    .top .title img {
+      width: 50%; }
+  .top h3 {
+    position: relative;
+    left: -50%;
+    font-family: monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: normal;
+    margin-top: -30px; }
 
 /*# sourceMappingURL=app.css.map */

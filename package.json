@@ -1,7 +1,7 @@
 {
-  "name": "angular_underscore",
+  "name": "iQuit",
   "version": "1.0.0",
-  "description": "A underscore template for angular projects with npm, webpack and dev-server",
+  "description": "iQuit, a resignation letter generator.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,8 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-animate": "^1.5.8",
+    "angular-formly": "^8.4.0",
+    "api-check": "^7.5.5",
     "jquery": "^3.1.1"
   }
 }

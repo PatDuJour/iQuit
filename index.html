@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="styles/app.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div ng-app="iQuit" class="container">
+    <div ng-app="iQuit" class="container" >
+      <div ng-show="editing" class="top fade delay">
+        <div class="title">
+          <img src="img/resign.png" alt="Resignation Letter" />
+        </div>
+        <h3>generator</h3>
+      </div>
       <div class="container__inner left">
         <div ng-hide="editing" class="welcome fade">
           <img src="img/resign.png" alt="Resignation Letter" />
