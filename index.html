@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="styles/app.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div ng-app="iQuit" class="container" >
+    <div ng-app="iQuit" ng-controller="mainCtrl as vm" class="container">
       <div ng-show="editing" class="top fade delay">
+      <!-- <div class="top fade delay"> -->
         <div class="title">
           <img src="img/resign.png" alt="Resignation Letter" />
         </div>
@@ -23,6 +24,14 @@
           </br>It's okay to tell your boss, "I Quit."
           </p>
           <a ng-click="editing = true" href="" class="quit">quit now</a>
+        </div>
+        <div ng-show="editing" class="form fade delay">
+        <!-- <div class="form"> -->
+          <form novalidate>
+            <formly-form model="vm.rental" fields="vm.rentalFields" form="vm.rentalForm">
+                <button type="submit" class="btn btn-primary" ng-disabled="vm.rentalForm.$invalid">NEXT</button>
+            </formly-form>
+          </form>
         </div>
       </div>
       <div class="container__inner right">
