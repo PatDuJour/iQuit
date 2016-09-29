@@ -7,6 +7,22 @@
   </head>
   <body>
     <div ng-app="iQuit" ng-controller="mainCtrl as vm" class="container">
+      <div ng-show="ready" class="letter fade delay--long">
+        <div class="content">
+          <p>Dear <span>{{user.boss}}</span>, </p>
+          <p>I am writing to formally notify you that I am resigning from
+            <span>{{user.company}}</span>. My last day of empoyment will be August 18.</p>
+          <p>During the past four years and three months, I have realized that
+            {{user.reason}}.</p>
+          <p>Thanks to you, I am deciding to pursue another path. It has
+          been a pleasure working for you.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>Regards,<br><span>{{user.name}}<span></p>
+        </div>
+      </div>
       <div ng-show="editing" class="top fade delay">
         <div class="title">
           <img src="img/resign.png" alt="Resignation Letter" />

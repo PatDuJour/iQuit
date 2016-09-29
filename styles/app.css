@@ -391,8 +391,13 @@ img {
   transition: all linear .5s; }
   .ng-hide-remove.fade.delay {
     transition-delay: .4s; }
+  .ng-hide-remove.fade.delay--long {
+    transition-delay: 1s; }
 .ng-hide-add.fade {
   transition: all linear .5s; }
+
+.right {
+  transition: all linear 1s; }
 
 .container {
   width: 100%;
@@ -407,8 +412,7 @@ img {
   background: linear-gradient(#EDEDED, #ECECEE, #E5E5E7); }
 
 .right {
-  left: 50%;
-  transition: all linear 1.5s; }
+  left: 50%; }
 
 .welcome {
   width: 80%;
@@ -441,7 +445,7 @@ img {
 .resign-letter {
   position: absolute;
   top: 20%;
-  left: calc(50% - 40.61px); }
+  left: calc(50% - 67.61px); }
   .resign-letter p {
     font-family: monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #77787A;
@@ -491,5 +495,21 @@ input, label {
     color: #27418F;
     font-weight: bold;
     cursor: pointer; }
+
+.letter {
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+  margin-top: 10%; }
+  .letter .content {
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 20%; }
+    .letter .content p span {
+      text-transform: capitalize; }
+    .letter .content p:nth-child(2),
+    .letter .content p:nth-child(3),
+    .letter .content p:nth-child(4) {
+      margin-top: 40px; }
 
 /*# sourceMappingURL=app.css.map */

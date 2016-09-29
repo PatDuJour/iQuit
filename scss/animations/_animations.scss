@@ -7,8 +7,13 @@
     &.delay {
       transition-delay: .4s;
     }
+    &.delay--long {
+      transition-delay: 1s;
+    }
   }
   &-add.fade {
     transition: all linear .5s;
   }
 }
+
+.right {transition: all linear 1s;}
