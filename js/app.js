@@ -53,12 +53,12 @@
       }
     },
     {
-      key: 'Reason',
+      key: 'reason',
       type: 'textarea',
       templateOptions: {
         type: 'text',
         label: 'Reason',
-        placeholder: "I DON'T CARE ANY MORE.",
+        placeholder: "I DON'T CARE ABOUT WHAT I DO ANY MORE.",
       }
     },
  	]; // fields/keys we need in the model as a list
@@ -66,7 +66,7 @@
 
     // function definition
     function onSubmit(user) {
-      alert(JSON.stringify(user));
+
     }
     $scope.onSubmit = onSubmit;
 
