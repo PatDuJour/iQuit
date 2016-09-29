@@ -403,10 +403,12 @@ img {
 
 .left, .right {
   width: 50%;
-  float: left; }
-
-.left {
+  position: absolute;
   background: linear-gradient(#EDEDED, #ECECEE, #E5E5E7); }
+
+.right {
+  left: 50%;
+  transition: all linear 1.5s; }
 
 .welcome {
   width: 80%;
@@ -439,7 +441,7 @@ img {
 .resign-letter {
   position: absolute;
   top: 20%;
-  left: 70%; }
+  left: calc(50% - 40.61px); }
   .resign-letter p {
     font-family: monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #77787A;
@@ -447,6 +449,7 @@ img {
 
 .top {
   position: absolute;
+  z-index: 99;
   left: 50%; }
   .top .title {
     position: relative;

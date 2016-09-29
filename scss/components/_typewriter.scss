@@ -1,7 +1,7 @@
 .resign-letter {
   position: absolute;
   top: 20%;
-  left: 70%;
+  left: calc(50% - 40.61px);
   p {
     font-family: $font-family--typewriter;
     color: #77787A;
