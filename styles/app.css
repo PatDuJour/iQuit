@@ -480,7 +480,7 @@ input, label {
   .form ng-form > div textarea {
     width: 70%;
     height: 60px; }
-  .form ng-form > div button.btn.btn-primary.ng-scope {
+  .form button {
     margin-left: calc(70% - 30.20px);
     padding: 5px 10px;
     background-color: #ccc;
@@ -488,7 +488,5 @@ input, label {
     color: #27418F;
     font-weight: bold;
     cursor: pointer; }
-    .form ng-form > div button.btn.btn-primary.ng-scope:active {
-      background-color: red; }
 
 /*# sourceMappingURL=app.css.map */

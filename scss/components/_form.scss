@@ -21,18 +21,15 @@ input, label {
         width: 70%;
         height: 60px;
       }
-      button.btn.btn-primary.ng-scope {
-        margin-left: calc(70% - 30.20px);
-        padding: 5px 10px;
-        background-color: #ccc;
-        border: 1px solid black;
-        color: $royal-blue;
-        font-weight: bold;
-        cursor: pointer;
-        &:active {
-          background-color: red;
-        }
-      }
     }
+  }
+  button {
+    margin-left: calc(70% - 30.20px);
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: 1px solid black;
+    color: $royal-blue;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
