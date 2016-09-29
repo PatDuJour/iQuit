@@ -25,11 +25,9 @@
           <a ng-click="editing = true" href="" class="quit">quit now</a>
         </div>
         <div ng-show="editing" class="form fade delay">
-          <form ng-submit="vm.onSubmit()" name="vm.form" novalidate>
-            <formly-form model="vm.model" fields="vm.fields" form="vm.form">
-              <button type="submit" class="btn btn-primary" ng-disabled="vm.form.$invalid">NEXT</button>
-            </formly-form>
-          </form>
+          <formly-form model="user" fields="userFields">
+          </formly-form>
+          <button type="submit" class="btn btn-default" ng-click="onSubmit(user)">Submit</button>
         </div>
       </div>
       <div class="container__inner right">
@@ -42,5 +40,11 @@
       </div>
     </div>
     <script src="js/app.min.js"></script>
+    <script type="text/ng-template" id="custom.html">
+      <div class="form-group">
+        <label for="{{::id}}">{{options.templateOptions.label}}</label>
+        <input id="{{::id}}" name="{{::id}}" class="form-control" ng-model="model[options.key]" />
+      </div>
+    </script>
   </body>
 </html>
